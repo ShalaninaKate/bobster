@@ -269,7 +269,6 @@ input[type=number]:focus {
   padding: 1.3125rem 1rem;
   min-height: 100%;
   border-radius: 16px 16px 0 0;
-  max-width: 390px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -1278,7 +1277,7 @@ input[type=number]:focus {
 .progress-completed .progress-load__item-icon::before {
   opacity: 1;
   visibility: visible;
-  background: url("../../img/svg/check-load.svg") center/0.75rem 0.625rem no-repeat;
+  background: url("../img/svg/check-load.svg") center/0.75rem 0.625rem no-repeat;
 }
 .progress-active .progress-load__item-icon {
   border: 2px solid var(--dark-blue);
@@ -1774,16 +1773,16 @@ input[type=number]:focus {
   cursor: pointer;
 }
 .rating__item:checked ~ .rating__label {
-  background: url("../../img/svg/star-active.svg") 0 0/2.625rem no-repeat;
+  background: url("../img/svg/star-active.svg") 0 0/2.625rem no-repeat;
 }
 .rating__item:focus + .rating__label {
-  background: url("../../img/svg/star-active.svg") 0 0/2.625rem no-repeat;
+  background: url("../img/svg/star-active.svg") 0 0/2.625rem no-repeat;
 }
 .rating__label {
   cursor: pointer;
   width: 2.625rem;
   height: 2.625rem;
-  background: url("../../img/svg/star.svg") 0 0/2.625rem no-repeat;
+  background: url("../img/svg/star.svg") 0 0/2.625rem no-repeat;
 }
 
 .review__items {
@@ -2111,7 +2110,7 @@ input[type=number]:focus {
   position: absolute;
   top: 1px;
   left: 2px;
-  background: url("../../img/svg/check.svg") center no-repeat;
+  background: url("../img/svg/check.svg") center no-repeat;
   border-radius: 6px;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -2607,7 +2606,7 @@ input[type=number]:focus {
 }
 .chat__message--user::after {
   right: -0.5rem;
-  background: url("../../img/svg/tip.svg") 0 0 no-repeat;
+  background: url("../img/svg/tip.svg") 0 0 no-repeat;
 }
 .chat__message--support {
   border-radius: 0 6px 6px 6px;
@@ -2618,7 +2617,7 @@ input[type=number]:focus {
 }
 .chat__message--support::after {
   left: -0.5rem;
-  background: url("../../img/svg/tip-blue.svg") 0 0 no-repeat;
+  background: url("../img/svg/tip-blue.svg") 0 0 no-repeat;
 }
 .chat__message-time {
   margin-right: -0.3125rem;
