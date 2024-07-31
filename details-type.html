@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Выбор типа реквизитов</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <form class="details-type">
+        <div class="body">
+          <h1 class="details-type__title title">Выбор типа реквизитов</h1>
+          <div class="details-type__options options">
+            <div class="options__item">
+              <input id="iban" type="radio" name="details-type" class="options__input">
+              <label for="iban" class="options__label">IBAN</label>
+            </div>
+            <div class="options__item">
+              <input id="card" type="radio" name="details-type" class="options__input" checked>
+              <label for="card" class="options__label">Карта</label>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit" class="button">Продолжить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Средства готовы к выдаче</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="main">
+        <div class="body deal-done-cash">
+          <div class="deal-done-cash__done done">
+            <img class="done__icon" src="./img/svg/done.svg" alt="">
+            <p class="done__text">Ваши средства готовы к выдаче</p>
+          </div>
+          <ul class="deal-done-cash__details done-details">
+            <li class="done-details__item">
+              <img class="done-details__item-icon" src="./img/svg/location.svg" alt="">
+              <div class="done-details__item-text">
+                <label for="" class="done-details__address-label">Адрес получения:
+                </label>
+                <address class="done-details__address">Улица Кеннеди 14, д. 15</address>
+              </div>
+            </li>
+            <li class="done-details__item">
+              <img class="done-details__item-icon" src="./img/svg/clock.svg" alt="">
+              <div class="done-details__item-text">
+                <div class="done-details__time">Вы можете забрать наличные в течении <span
+                    class="done-details__time-value">72
+                    часов</span>.
+                </div>
+                <p class="done-details__time-descr">После истечения срока заявка будет аннулирована</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <button class="button">Отлично!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

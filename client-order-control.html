@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Детали перевода2</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="main client-order-control">
+        <div class="body">
+          <div class="client-order-control__info order-control-info">
+            <h1 class="order-control-info__title title">Детали перевода</h1>
+            <p class="order-control-info__text">
+              Ордер <span class="order-control-info__text--order">#457664</span> создан, посредник
+              уведомлен о зачислении!
+            </p>
+          </div>
+           <div class="client-order-control__time transaction-detail-time">
+             <p class="transaction-detail-time__text">Время до зачисления</p>
+             <div class="transaction-detail-time__timer">13:45:31</div>
+           </div>
+           <div class="client-order-control__status order-control-status">
+             <label for="" class="order-control-status__label">Статус перевода: </label>
+             <div class="order-control-status__value">В процессе выполнения</div>
+           </div>
+          <div class="client-order-control__summary transaction-detail-summary">
+            <div class="transaction-detail-summary__amount">10 000 TRY</div>
+            <p class="transaction-detail-summary__text">Перевод будет зачислен на карту
+              <span> 1234 1234 1234 8888</span></p>
+          </div>
+        </div>
+        <div class="client-order-control__footer footer">
+          <button type="submit" class="button">Обновить статус</button>
+          <div class="client-order-control__actions">
+            <a href="#" class="client-order-control__btn button button--gray-border">Перевод не получен (чат) </a>
+            <button class="client-order-control__btn button button--orange-border">Отменить ордер</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

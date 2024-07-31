@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout «Bobster»</title>
+</head>
+
+<body>
+  <div class="rootpage">
+    <h1>layout «Bobster»</h1>
+    <div class="rootpage__info">
+      Project description
+    </div>
+    <h2>
+      Pages</h2>
+    <h3>
+      Клиентское приложение
+    </h3>
+    <ol class="rootpage__list">
+      <li><a target="_blank" href="client-main.html">Отправить перевод</a></li>
+      <li><a target="_blank" href="client-main-load.html">Ожидание</a></li>
+      <li><a target="_blank" href="client-transaction-detail.html">Детали перевода</a></li>
+      <li><a target="_blank" href="client-order-control.html">Детали перевода2</a></li>
+      <li><a target="_blank" href="chat.html">Чат поддержки по ордеру</a></li>
+      <li><a target="_blank" href="check.html">Проверить зачисление</a></li>
+      <li><a target="_blank" href="deal-done.html">Сделка по переводу завершена</a></li>
+      <li><a target="_blank" href="details-type.html">Выбор типа реквизитов</a></li>
+      <li><a target="_blank" href="entering-details.html">Ввод реквизитов</a></li>
+      <li><a target="_blank" href="chats.html">Мои чаты</a></li>
+      <li><a target="_blank" href="history.html">История</a></li>
+      <li><a target="_blank" href="notification.html">Уведомления</a></li>
+      <li><a target="_blank" href="settings.html">Настройки</a></li>
+      <li><a target="_blank" href="cards.html">Мои карты</a></li>
+    </ol>
+    <h3>
+      Клиентское приложение. Старт с наличными
+    </h3>
+    <ol class="rootpage__list">
+      <li><a target="_blank" href="client-main_cash.html">Отправить перевод</a></li>
+      <li><a target="_blank" href="entering-details_cash.html">Детали перевода</a></li>
+      <li><a target="_blank" href="deal-done_cash.html">Средства готовы к выдаче</a></li>
+    </ol>
+
+    <h3>
+      Трейдер приложение
+    </h3>
+    <ol class="rootpage__list">
+      <li><a target="_blank" href="trader-main.html">Кошелек</a></li>
+      <li><a target="_blank" href="topUp-balance.html">Внести деньги на баланс</a></li>
+      <li><a target="_blank" href="transaction-start.html">Начать сделку</a></li>
+      <li><a target="_blank" href="transaction-start2.html">Начать сделку2</a></li>
+      <li><a target="_blank" href="transaction-confirmation.html">Подтверждение сделки</a></li>
+      <li><a target="_blank" href="transaction-waiting-confirmation.html">Ожидание подтверждения</a></li>
+      <li><a target="_blank" href="confirms-transfer.html">Клиент подтвердил получение перевода</a></li>
+      <li><a target="_blank" href="transactions-log.html">Журнал заявок</a></li>
+      <li><a target="_blank" href="transaction-type.html">Тип сделки</a></li>
+      <li><a target="_blank" href="chat.html">Чат поддержки по ордеру</a></li>
+      <li><a target="_blank" href="chats.html">Мои чаты</a></li>
+      <li><a target="_blank" href="history.html">История</a></li>
+      <li><a target="_blank" href="notification.html">Уведомления</a></li>
+    </ol>
+
+    <h3>
+      Реферер
+    </h3>
+    <ol class="rootpage__list">
+      <li><a target="_blank" href="referrer.html">Реферер</a></li>
+      <li><a target="_blank" href="referrals.html">Рефералы</a></li>
+    </ol>
+
+    <h3>
+      App Трейдер 2, Офлайн обменник
+    </h3>
+    <ol class="rootpage__list">
+      <li><a target="_blank" href="referrer.html">Реферер</a></li>
+      <li><a target="_blank" href="transactions-log.html">Журнал заявок</a></li>
+      <li><a target="_blank" href="transaction-confirmation2.html">Подтверждение сделки2</a></li>
+      <li><a target="_blank" href="transaction-waiting-confirmation2.html">Ожидание подтверждения2</a></li>
+      <li><a target="_blank" href="confirms-transfer.html">Клиент подтвердил получение перевода</a></li>
+    </ol>
+  </div>
+</body>
+<style>
+  @charset "UTF-8";
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+  *,
+  *::before,
+  *::after {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    width: 100%;
+    color: #fff;
+    background-color: #5e5373;
+  }
+
+  body {
+    font-family: Montserrat;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #ebe691
+  }
+
+  a:visited {
+    text-decoration: underline;
+    color: #aaa768;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  .rootpage {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 767px) {
+    .rootpage {
+      padding: 30px 15px;
+    }
+  }
+
+  h1 {
+    color: #ebe691;
+    font-size: 2.5rem;
+    margin: 0px 0px 1.25rem 0px;
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 1.85rem;
+      margin: 0px 0px 1.25rem 0px;
+    }
+  }
+
+  h2 {
+    color: #ebe691;
+    font-size: 1.25rem;
+    margin: 0px 0px 1rem 0px;
+  }
+
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 1.125rem;
+      margin: 0px 0px 1rem 0px;
+    }
+  }
+
+  h3 {
+    color: #ebe691;
+    font-size: 1rem;
+    margin: 0px 0px 1rem 0px;
+  }
+
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 1rem;
+      margin: 0px 0px 1rem 0px;
+    }
+  }
+
+  .rootpage__info {
+    line-height: 140%;
+    margin: 0px 0px 1.5rem 0px;
+  }
+
+  .rootpage__list {
+    margin: 0px 0px 2.25rem 1.25rem;
+  }
+
+  .rootpage__list li:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .rootpage__contacts,
+  .rootpage__tnx {
+    border-radius: 200px;
+    padding: 20px 65px;
+    line-height: 140%;
+  }
+
+  @media (max-width: 767px) {
+
+    .rootpage__contacts,
+    .rootpage__tnx {
+      border-radius: 40px;
+      padding: 20px;
+    }
+  }
+
+  .rootpage__contacts {
+    background: #32b5a4;
+
+  }
+
+  .rootpage__contacts a {
+    color: #ebe691;
+  }
+
+  .rootpage__tnx {
+    background: #c22d63;
+    margin: 0px 0px 1rem 0px;
+  }
+
+</style>
+
+</html>

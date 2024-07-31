@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Мои карты</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="main cards">
+        <div class="body">
+          <h1 class="cards__title title mb-title">Мои карты</h1>
+          <ul class="cards__items">
+            <li class="cards__item">
+              <label for="" class="cards__label">Для TRY</label>
+              <div class="cards__body">
+                <img class="cards__icon" src="./img/card-icons/mastercard.svg" alt="">
+                <div class="cards__info">
+                  <div class="cards__code">2589 **** ***** 1111</div>
+                  <div class="cards__term">11/26</div>
+                </div>
+                <button class="cards__btn-del">
+                  <svg class="cards__btn-del-icon">
+                    <use xlink:href="img/sprite.svg#trash"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="cards__item">
+              <label for="" class="cards__label">Для CNY</label>
+              <div class="cards__body">
+                <img class="cards__icon" src="./img/card-icons/mastercard.svg" alt="">
+                <div class="cards__info">
+                  <div class="cards__code">2589 **** ***** 1111</div>
+                  <div class="cards__term">11/26</div>
+                </div>
+                <button class="cards__btn-del">
+                  <svg class="cards__btn-del-icon">
+                    <use xlink:href="img/sprite.svg#trash"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="cards__item">
+              <label for="" class="cards__label">Для USD</label>
+              <div class="cards__body">
+                <img class="cards__icon" src="./img/card-icons/visa.svg" alt="">
+                <div class="cards__info">
+                  <div class="cards__code">2589 **** ***** 1111</div>
+                  <div class="cards__term">11/26</div>
+                </div>
+                <button class="cards__btn-del">
+                  <svg class="cards__btn-del-icon">
+                    <use xlink:href="img/sprite.svg#trash"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <button class="cards__add-btn button button--blue-border">Добавить
+            <img class="cards__add-btn-icon" src="./img/svg/add.svg" alt="">
+          </button>
+        </div>
+        <div class="footer">
+          <button class="button">Сохранить изменения</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

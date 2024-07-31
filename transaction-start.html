@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Начать сделку</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="main transaction">
+        <div class="body">
+          <h1 class="transaction__title title">Начать сделку</h1>
+          <div class="transaction__time">
+            <p class="transaction__time-text">Для подтверждения сделки, осталось:</p>
+            <div class="transaction__time-timer">00:15:00</div>
+          </div>
+          <ul class="transaction__details card">
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Ордер</label>
+              <div class="transaction__details-value">#4059803</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Сумма сделки:</label>
+              <div class="transaction__details-value">14 813.12 TRY</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Получаю:</label>
+              <div class="transaction__details-value">40 000 RUB</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Отдаю:</label>
+              <div class="transaction__details-value">14 812.12 TRY</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Валюта получения:</label>
+              <div class="transaction__details-value">TRY</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Комиссия сервиса:</label>
+              <div class="transaction__details-value">3%</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Профит:</label>
+              <div class="transaction__details-value">12%</div>
+            </li>
+          </ul>
+          <ul class="transaction__details card card--transparent">
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Клиент ID:</label>
+              <div class="transaction__details-value">878754213</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">IBAN получения:</label>
+              <div class="transaction__details-value">21938457091238570197812341</div>
+              <button class="transaction__details-copy">
+                <svg class="transaction__details-copy-icon">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Сумма резервирования в USDT: </label>
+              <div class="transaction__details-value">4000</div>
+            </li>
+            <li class="transaction__details-item">
+              <label for="" class="transaction__details-label">Остаток свободных средств в USDT:</label>
+              <div class="transaction__details-value">4000</div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <button class="button">Начать сделку и отправить реквизиты</button>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

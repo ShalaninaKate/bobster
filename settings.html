@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Настройки</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <form class="main settings">
+        <div class="body">
+          <h1 class="title mb-title">Настройки</h1>
+          <div class="settings__form form">
+            <div class="settings__form-items form__items">
+
+              <div class="form__item">
+                <label for="" class="form__label">Валюта переводов</label>
+                <button class="form__control form-control">
+                  <div class="form-control__img form-control__img--currency">
+                    <img class="form-control__icon" src="./img/currency/rub.svg" alt="rub">
+                  </div>
+                  <p class="form-control__text">RUB <span class="form-control__text-currency">(Российский рубль)</span>
+                  </p>
+                  <img class="form-control__arrow" src="./img/svg/arrow.svg" alt="arrow">
+                </button>
+              </div>
+              <div class="form__item">
+                <label for="" class="form__label">Язык интерфейса</label>
+                <button class="form__control form-control">
+                  <img class="form-control__img " src="./img/country/rus.svg" alt="">
+                  <p class="form-control__text">РУС
+                  </p>
+                  <img class="form-control__arrow" src="./img/svg/arrow.svg" alt="arrow">
+                </button>
+              </div>
+              <div class="form__item">
+                <div class="form__item-row">
+                  <label for="" class="form__label">Валюта получения</label>
+                  <div class="form__converter">Курс: 1 TRY = 3.0 RUB</div>
+                </div>
+                <button class="form__control form-control">
+                  <div class="form-control__img form-control__img--currency">
+                    <img class="form-control__icon" src="./img/currency/lira.svg" alt="lira">
+                  </div>
+                  <p class="form-control__text">TRY <span class="form-control__text-currency">(Турецкая лира)</span></p>
+                  <img class="form-control__arrow" src="./img/svg/arrow.svg" alt="arrow">
+                </button>
+              </div>
+              <a href="#" class="button button--blue-border">Мои карты</a>
+            </div>
+          </div>
+          <div class="settings__code">
+            <img src="./img/qr.jpg" alt="" class="settings__code-qr">
+            <div class="settings__code-content">
+              <label class="settings__code-label">Код для сделки со <br> сторонним трейдером:
+              </label>
+              <a href="#" class="settings__code-link code">
+                <p class="code__value">120982347</p>
+                <button class="copy-btn">
+                  <svg class="copy-btn__icon">
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit" class="button">Сохранить изменения</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

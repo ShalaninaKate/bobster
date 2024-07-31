@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Детали перевода</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <div class="main client-transaction-detail">
+
+        <div class="body">
+          <button class="help">
+  <img class="help__icon" src="../img/svg/help.svg" alt="">
+  <p class="help__text">Помощь</p>
+</button>
+
+          <div class="client-transaction-detail__info transaction-detail-info">
+            <h1 class="transaction-detail-info__title title">Детали перевода</h1>
+            <p class="transaction-detail-info__text">
+              Переведите <span class="transaction-detail-info__value">30 000 RUB</span> на указанную карту и
+              подтвердите
+              отправку
+            </p>
+            <div class="transaction-detail-info__code">
+              <div class="transaction-detail-info__code-value">2398 0293 0983 0983</div>
+              <div class="transaction-detail-info__code-actions">
+                <button class="copy-btn">
+                  <svg class="copy-btn__icon copy-btn__icon--white">
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+                <button class="link-btn">
+                  <svg class="link-btn__icon link-btn__icon--orange">
+                    <use xlink:href="img/sprite.svg#link"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="transaction-detail-info__bottom">
+              <div class="transaction-detail-info__bottom-item">
+                <label class="transaction-detail-info__bottom-label">Имя получателя:</label>
+                <p class="transaction-detail-info__bottom-text">Иван Иванович И.</p>
+              </div>
+              <div class="transaction-detail-info__bottom-item">
+                <label class="transaction-detail-info__bottom-label">Банк:</label>
+                <p class="transaction-detail-info__bottom-text">T-Банк</p>
+              </div>
+            </div>
+          </div>
+          <div class="client-transaction-detail__summary transaction-detail-summary">
+            <div class="transaction-detail-summary__amount">10 000 TRY</div>
+            <p class="transaction-detail-summary__text">Перевод будет зачислен на карту
+              <span> 1234 1234 1234 8888</span></p>
+          </div>
+          <div class="client-transaction-detail__time transaction-detail-time">
+            <p class="transaction-detail-time__text">Время до анулирования заявки</p>
+            <div class="transaction-detail-time__timer">13:45:31</div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit" class="button">Я оплатил</button>
+          <div class="guarantee">
+            <img class="guarantee__icon" src="./img/svg/guarantee.svg" alt="">
+            <p class="guarantee__text">Сделка гарантирована Bobster</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

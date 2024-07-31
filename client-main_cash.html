@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Отправить перевод</title>
+  <link rel="stylesheet" href="css/main.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="page ">
+      <header class="header">
+  <div class="header__row">
+    <a href="#" class="header__back-btn">Отмена</a>
+    <p class="header__app-name">Bobster Payments</p>
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+  <div class="header__row">
+    <a href="#" class="header__action">
+      <!-- <img class="header__ava-img" src="../img/ava.jpg" alt="ava"> //стили для фото, если оно есть -->
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#person"></use>
+      </svg>
+    </a>
+    <a href="#" class="header__logo">
+
+    <div class="logo">
+      <img class="logo__icon" src="./img/logo.svg" alt="logo bobster">
+      <div class="logo__text">
+        <div class="logo__name">BOBSTER</div>
+        <div class="logo__descr">PAYMENTS</div>
+      </div>
+    </div>
+
+    </a>
+    <a href="#" class="header__action">
+      <svg class="header__action-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+
+      <nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#document"></use>
+        </svg>
+        <p class="navigation__link-text">Заявки</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#chatbubbles"></use>
+        </svg>
+        <p class="navigation__link-text">Поддержка</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#time"></use>
+        </svg>
+        <p class="navigation__link-text">История</p>
+      </a>
+    </li>
+    <li class="navigation__item"><a href="#" class="navigation__link">
+        <svg class="navigation__link-icon">
+          <use xlink:href="img/sprite.svg#settings"></use>
+        </svg>
+        <p class="navigation__link-text">Настройки</p>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      <form class="main client-main">
+        <div class="body">
+          <h1 class="client-main__title title">Отправить перевод</h1>
+          <div class="client-main__form form">
+            <div class="client-main__form-items form__items">
+              <div class="form__item">
+                <label for="" class="form__label">Отправляете</label>
+                <button class="form__control form-control form-control--transfer">
+                  <div class="form-control__img form-control__img--currency">
+                    <img class="form-control__icon" src="./img/currency/rub.svg" alt="rub">
+                  </div>
+                  <p class="form-control__text">RUB <span class="form-control__text-currency">(Российский рубль)</span>
+                  </p>
+                  <img class="form-control__arrow" src="./img/svg/arrow.svg" alt="arrow">
+                </button>
+              </div>
+              <div class="form__item">
+                <input class="form-control form-control--transfer" type="number" value="30000.00">
+                <div class="form__item-bottom">Лимит: 1 000 000.00 RUB</div>
+              </div>
+              <div class="form__item">
+                <div class="form__item-row">
+                  <label for="" class="form__label">Получаете</label>
+                  <div class="form__converter">Курс: 1 TRY = 3.0 RUB</div>
+                </div>
+                <button class="form__control form-control form-control--transfer">
+                  <div class="form-control__img form-control__img--currency">
+                    <img class="form-control__icon" src="./img/currency/lira.svg" alt="lira">
+                  </div>
+                  <p class="form-control__text">TRY <span class="form-control__text-currency">(Турецкая лира)</span></p>
+                  <img class="form-control__arrow" src="./img/svg/arrow.svg" alt="arrow">
+                </button>
+                <div class="form__item-bottom">Доступно: 5 000 000.00 TRY</div>
+              </div>
+            </div>
+            <div class="client-main__form-received">10 000 TRY</div>
+            <div class="client-main__form-options options">
+              <div class="options__item">
+                <input id="card" type="radio" name="payment" class="options__input">
+                <label for="card" class="options__label">Карта</label>
+              </div>
+              <div class="options__item">
+                <input id="cash" type="radio" name="payment" class="options__input" checked>
+                <label for="cash" class="options__label">Наличными</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit" class="button">Оформить перевод</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
